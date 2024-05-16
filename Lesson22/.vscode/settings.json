@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "map": "cpp",
+        "istream": "cpp",
+        "vector": "cpp",
+        "set": "cpp",
+        "ostream": "cpp",
+        "stdexcept": "cpp"
+    }
+}
