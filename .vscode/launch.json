@@ -1,21 +1,13 @@
 {
-    "configurations": [
-      {
-        "name": "C/C++: clang++ build and debug active file",
-        "type": "cppdbg",
-        "request": "launch",
-        "program": "${fileDirname}/${fileBasenameNoExtension}",
-        "args": [
-          "-Wunused-params",
-          "-Wall",
-          "-Werror",
-        ],
-        "stopAtEntry": false,
-        "cwd": "${fileDirname}",
-        "environment": [],
-        "externalConsole": true,
-        "MIMode": "lldb",
-        "preLaunchTask": "C/C++: clang++ build active file"
-      }
-    ],
-    "version": "2.0.0"
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/varvbar/projects/practicum/sprint4/Lesson23/final_sprint4",
+      "program": "/Users/varvbar/projects/practicum/sprint4/Lesson23/final_sprint4/build/Debug/outDebug"
+    }
+  ]
+}

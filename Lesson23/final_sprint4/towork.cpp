@@ -1,12 +1,36 @@
-#include "document.h"
-#include "read_input_functions.h"
-#include "paginator.h"
-#include "request_queue.h"
-#include "search_server.h"
-#include "string_processing.h"
+#include <algorithm>
+#include <cmath>
+#include <deque>
+
+#include <map>
+#include <set>
+#include <stdexcept>
+
+#include <utility>
+#include <vector>
+
+using namespace std;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 int main() {
-    using namespace std;
     SearchServer search_server("and in at"s);
     RequestQueue request_queue(search_server);
     search_server.AddDocument(1, "curly cat curly tail"s, DocumentStatus::ACTUAL, {7, 2, 7});
