@@ -3,11 +3,7 @@
 //#include "string_processing.h"
 using namespace std;
 
-SearchServer::SearchServer(const std::string& stop_words_text)
-    : SearchServer(
-        SplitIntoWords(stop_words_text))  // Invoke delegating constructor from string container
-{
-}
+
 
 void SearchServer::AddDocument(int document_id, const std::string& document, DocumentStatus status,
                     const std::vector<int>& ratings) {

@@ -7,7 +7,12 @@
 
 class RequestQueue {
 public:
-    RequestQueue(const SearchServer& search_server);
+    RequestQueue(const SearchServer& search_server) 
+        :search_server_(search_server)
+        , minutes_(0)
+        , empty_results_(0)
+    {
+    }
     // сделаем "обёртки" для всех методов поиска, чтобы сохранять результаты для нашей статистики
     template <typename DocumentPredicate>
     std::vector<Document> AddFindRequest(const std::string& raw_query, DocumentPredicate document_predicate) {
